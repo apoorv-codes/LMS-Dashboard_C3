@@ -1,19 +1,91 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LMS-Dashboard</title>
     <script defer src="/__/firebase/8.6.1/firebase-app.js"></script>
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <link rel="stylesheet" href="res/styles.css">
-    <link rel="stylesheet" href="res/styles-mobile.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/121832da78.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="res/styles.css" />
+    <link rel="stylesheet" href="res/styles-mobile.css" />
   </head>
   <body>
-    <div class="test">This is a test text</div>
+      <nav class="side_nav">
+        <div class="logo">
+          <a href="index.html" class="side_nav_logo"
+            ><i class="fa fa-school"></i
+          ></a>
+        </div>
+        <a href="#study" class="side_nav_icons active"
+          ><i class="fa fa-graduation-cap"></i
+        ></a>
+        <a href="#chat" class="side_nav_icons"
+          ><i class="far fa-comments"></i
+        ></a>
+        <a href="#important" class="side_nav_icons"
+          ><i class="far fa-star"></i
+        ></a>
+        <a href="#active" class="side_nav_icons"><i class="fa fa-bolt"></i></a>
+      </nav>
+      <div id="page_container">
+      <div class="side_bar item">
+        <div>
+           
+        </div>
+      </div>
+      <main class="item">
+        <h1>MAIN CONTENT GOES HERE</h1>
+        <p>
+          ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat vitae
+          ante sit amet blandit. Sed ac commodo purus, ac volutpat nibh. Nullam
+          pretium mollis fringilla. Fusce sit amet justo elementum dolor commodo
+          finibus id vitae augue. Quisque dignissim gravida luctus. Sed vehicula
+          lobortis enim, et viverra justo auctor in. Suspendisse sit amet neque
+          a est vulputate suscipit.
+        </p>
+        <p>
+          Maecenas ut feugiat nunc, sit amet iaculis odio. Phasellus in accumsan
+          tortor, vel pharetra lorem. Morbi tincidunt at mi nec luctus. Nam
+          tempor purus ac nisi consectetur, euismod maximus tellus ultricies.
+          Nunc hendrerit felis non nisl eleifend venenatis. Vivamus consequat
+          risus et vestibulum pharetra. Nullam ut congue enim, ut porttitor sem.
+          Praesent sagittis eros nisl, nec cursus dui tempor ac. Nam sed maximus
+          erat. Morbi rhoncus vitae leo vitae tempor. Nullam pellentesque porta
+          hendrerit. Phasellus viverra, mi id fringilla suscipit, erat ante
+          scelerisque ipsum, ut euismod turpis enim eu dui. Vestibulum facilisis
+          ante ipsum, et molestie turpis commodo et. Sed ut diam magna. Morbi
+          non venenatis massa. Nulla facilisi.
+        </p>
+        <p>
+          Nunc molestie sagittis nulla, ac auctor nisl tincidunt eget. Nam non
+          lobortis ligula. Duis iaculis arcu eget tincidunt pretium. Nam vitae
+          arcu venenatis, aliquam enim et, pellentesque sem. Nulla nec neque ut
+          nisi condimentum ullamcorper eu in risus. Quisque maximus lorem eget
+          elementum vehicula. Vivamus nec blandit libero. Fusce et tempus nisl,
+          imperdiet posuere velit. Proin faucibus sapien nibh, sed laoreet neque
+          accumsan nec. Suspendisse pharetra nisi sit amet tortor egestas, sed
+          interdum mauris pharetra. Aliquam neque est, pellentesque sed
+          ullamcorper eget, pretium ut tellus. Nunc imperdiet risus non nisi
+          pharetra, eu gravida risus iaculis. Pellentesque non dictum est. Donec
+          commodo diam sit amet massa pellentesque, ut laoreet mi sagittis.
+        </p>
+      </main>
+    </div>
+
     <!-- link to javascript -->
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/config.js"></script>
   </body>
