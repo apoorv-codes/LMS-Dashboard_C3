@@ -78,8 +78,12 @@ main {
   align-items: center;
   justify-content: flex-end;
 }
+.top_bar_icons{
+    padding: 6px 0px 6px 0px;
+}
 .top_bar_icons i {
   margin-top: 25%;
+  flex: 1;
 }
 .notification-icon {
   display: flex;
@@ -106,6 +110,7 @@ main {
 }
 .left-section{
     flex: 1;
+    margin-left: 0.3rem;
 }
 .side_bar {
   min-width: 12rem;
@@ -123,11 +128,11 @@ main {
   flex: 1;
   margin-left: 1rem;
   text-decoration: none;
-  color: #3b3b3b;
+  color: #333333;
 }
 .sidebar-item-lable {
   flex: 5;
-  color: #575757;
+  color: #4d4d4d;
 }
 
 .side_nav {
