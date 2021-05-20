@@ -73,7 +73,6 @@ main {
   border-radius: 16px;
   transition: 0.3s;
 }
-
 .top_bar {
   align-items: center;
   justify-content: flex-end;
@@ -111,9 +110,10 @@ main {
 .left-section{
     flex: 1;
     margin-left: 0.3rem;
+    min-width: 12rem;
+    max-width: 12rem;
 }
 .side_bar {
-  min-width: 12rem;
   height: fit-content;
   background: var(--side-menu-background-color);
   border-radius: 1rem;
@@ -146,6 +146,9 @@ main {
   padding: 8px;
   padding-top: 20px;
 }
+.ham-icon{
+    display: none;
+}
 .side_nav_logo {
   font-size: 20px;
   color: var(--color-accent);
@@ -161,6 +164,28 @@ main {
 .far {
   margin-top: 25%;
   margin-bottom: 25%;
+}
+
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+  }
+main{
+    overflow-y: auto;
+}
+.grid-item{
+    background-color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.grid-item div{
+    margin: auto;
+    color: var(--color-primary);
 }
 
 /* all the animations/acivity are below */
@@ -194,6 +219,7 @@ main {
   animation: dropdown 800ms infinite;
   transition: 800ms;
 }
+
 /* dropdown animation */
 @keyframes dropdown {
   0% {
@@ -413,6 +439,7 @@ main {
 #page_container,
 .top_bar {
   margin-left: 4.125rem;
+  margin-right: 1rem;
   display: flex;
 }
 #content {
