@@ -120,10 +120,13 @@ main {
   background: var(--side-menu-background-color);
   border-radius: 1rem;
   padding: 0.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .side-bar-items {
   margin-left: 0.1rem;
   display: flex;
+  border-radius: .4rem;
   align-items: center;
 }
 .sidebar-item-icon {
@@ -285,7 +288,16 @@ main {
   transition: 800ms;
 }
 
+.side-bar-items:hover{
+    background-color: #747474;
+}
+.side-bar-items:hover .side_nav_icon{
 
+    color: var(--color-accent-faded);
+}
+.side-bar-items:hover .sidebar-item-lable{
+    color: var(--color-accent-faded);
+}
 /* dropdown animation */
 @keyframes dropdown {
   0% {
