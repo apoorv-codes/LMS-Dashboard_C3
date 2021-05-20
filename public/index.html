@@ -35,7 +35,7 @@
       <a href="#active" class="side_nav_icons"><i class="fa fa-bolt"></i></a>
     </nav>
     <div class="top_bar">
-      <a href="#ham" id = "ham"class="top_bar_icons ham-icon"
+      <a href="#ham" id="ham" class="top_bar_icons ham-icon"
         ><i class="fa fa-bars"></i
       ></a>
       <a href="#heart" class="top_bar_icons heart-icon"
@@ -57,67 +57,185 @@
       </div>
     </div>
     <div id="page_container">
-      <div id = "left-section" class="left-section item">
+      <div id="left-section" class="left-section item">
         <div class="side_bar item">
           <div class="side-bar-items">
-            <a href="#active" class="sidebar-item-icon"><i class="fa fa-home"></i></a>
+            <a href="#active" class="sidebar-item-icon"
+              ><i class="fa fa-home"></i
+            ></a>
             <p class="normal-bold sidebar-item-lable">Home</p>
           </div>
           <div class="side-bar-items">
-            <a href="#active" class="sidebar-item-icon"><i class="fa fa-tachometer-alt"></i></a>
+            <a href="#active" class="sidebar-item-icon"
+              ><i class="fa fa-tachometer-alt"></i
+            ></a>
             <p class="normal-bold sidebar-item-lable">Dashboard</p>
           </div>
           <div class="side-bar-items">
-            <a href="#active" class="sidebar-item-icon"><i class="fa fa-user-graduate"></i></a>
+            <a href="#active" class="sidebar-item-icon"
+              ><i class="fa fa-user-graduate"></i
+            ></a>
             <p class="normal-bold sidebar-item-lable">My Enrollments</p>
           </div>
           <div class="side-bar-items">
-            <a href="#active" class="sidebar-item-icon"><i class="fa fa-trophy"></i></a>
+            <a href="#active" class="sidebar-item-icon"
+              ><i class="fa fa-trophy"></i
+            ></a>
             <p class="normal-bold sidebar-item-lable">My Achievements</p>
           </div>
           <div class="side-bar-items">
-            <a href="#active" class="sidebar-item-icon"><i class="fa fa-wpforms"></i></a>
+            <a href="#active" class="sidebar-item-icon"
+              ><i class="fa fa-wpforms"></i
+            ></a>
             <p class="normal-bold sidebar-item-lable">Forum</p>
           </div>
-          <hr>
+          <hr />
           <div class="side-bar-items">
-            <a href="#active" class="sidebar-item-icon"><i class="fa fa-pencil"></i></a>
+            <a href="#active" class="sidebar-item-icon"
+              ><i class="fa fa-pencil"></i
+            ></a>
             <p class="normal-bold sidebar-item-lable">Notes</p>
           </div>
           <div class="side-bar-items">
-            <a href="#active" class="sidebar-item-icon"><i class="fa fa-bookmark"></i></a>
+            <a href="#active" class="sidebar-item-icon"
+              ><i class="fa fa-bookmark"></i
+            ></a>
             <p class="normal-bold sidebar-item-lable">Bookmarks</p>
           </div>
           <div class="side-bar-items">
-            <a href="#active" class="sidebar-item-icon"><i class="fa fa-cog"></i></a>
+            <a href="#active" class="sidebar-item-icon"
+              ><i class="fa fa-cog"></i
+            ></a>
             <p class="normal-bold sidebar-item-lable">Settings</p>
           </div>
         </div>
       </div>
-      <main class="item auto-grid">
-        <div class="grid-item">
-          <div class = "heading">hello</div>
+      <main>
+        <div class="title">Hi, champion!</div>
+        <div class="item auto-grid">
+          <div class="grid-item">
+            <div class="heading section-title">Upcomming Lessons</div>
+            <div class="flex-content">
+              <div class="lesson">
+                <div class="time">
+                  <div class="lable">June,10</div>
+                  <div class="light">4:00 PM</div>
+                </div>
+                <div class="info">
+                  <div class="normal-bold">Tutoring. Algebra</div>
+                  <div class="light">Kiestren Lange</div>
+                </div>
+                <div class="class-icon">
+                  <img src="res/dp.png" class="profile-image" alt="user" />
+                </div>
+              </div>
+              <div class="lesson">
+                <div class="time">
+                  <div class="lable">June,10</div>
+                  <div class="light">4:00 PM</div>
+                </div>
+                <div class="info">
+                  <div class="normal-bold">Tutoring. Algebra</div>
+                  <div class="light">Kiestren Lange</div>
+                </div>
+                <div class="class-icon">
+                  <img src="res/dp.png" class="profile-image" alt="user" />
+                </div>
+              </div>
+              <div class="lesson">
+                <div class="time">
+                  <div class="lable">June,10</div>
+                  <div class="light">4:00 PM</div>
+                </div>
+                <div class="info">
+                  <div class="normal-bold">Tutoring. Algebra</div>
+                  <div class="light">Kiestren Lange</div>
+                </div>
+                <div class="class-icon">
+                  <img src="res/dp.png" class="profile-image" alt="user" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="heading section-title">Leaderboard</div>
+            <div class="flex-content">
+              <table id="rankings" class="leaderboard-results" width="100%">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Country</th>
+                    <th>P1</th>
+                    <th>P2</th>
+                    <th>Games Played</th>
+                    <th>PTS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Load SCRIMcom Leaderboard Ranings -->
+                  <tr>
+                    <td>1</td>
+                    <td>Nihilum</td>
+                    <td>United States</td>
+                    <td>Hydramist</td>
+                    <td>Reckful</td>
+                    <td>33</td>
+                    <td>2390</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>SK Gaming</td>
+                    <td>United Kingdom</td>
+                    <td>Ninja</td>
+                    <td>SmashBr0</td>
+                    <td>32</td>
+                    <td>2243</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Fnatic</td>
+                    <td>Sweden</td>
+                    <td>Snackbar</td>
+                    <td>Gamer1337</td>
+                    <td>33</td>
+                    <td>2121</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Dignitas</td>
+                    <td>Finland</td>
+                    <td>Swifty</td>
+                    <td>allan-snackbar</td>
+                    <td>30</td>
+                    <td>2108</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="heading section-title">hello</div>
+            <div class="flex-content">dgs</div>
+          </div>
+          <div class="grid-item">
+            <div class="heading section-title">hello</div>
+            <div class="flex-content">dgs</div>
+          </div>
+          <div class="grid-item">
+            <div class="heading section-title">hello</div>
+            <div class="flex-content">dgs</div>
+          </div>
+          <div class="grid-item">
+            <div class="heading section-title">hello</div>
+            <div class="flex-content">dgs</div>
+          </div>
+          <div class="grid-item">
+            <div class="heading section-title">hello</div>
+            <div class="flex-content">dgs</div>
+          </div>
         </div>
-        <div class="grid-item">
-          <div class = "heading">hello</div>
-        </div>
-        <div class="grid-item">
-          <div class = "heading">hello</div>
-        </div>
-        <div class="grid-item">
-          <div class = "heading">hello</div>
-        </div>
-        <div class="grid-item">
-          <div class = "heading">hello</div>
-        </div>
-        <div class="grid-item">
-          <div class = "heading">hello</div>
-        </div>
-        <div class="grid-item">
-          <div class = "heading">hello</div>
-        </div>
-       
-        
       </main>
     </div>
 

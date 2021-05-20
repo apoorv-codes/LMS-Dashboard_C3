@@ -1,58 +1,65 @@
 @media only screen and (max-width: 600px) {
-    .side_nav{
-        display: flex;
-        bottom:0;
-        top: auto;
-        left: auto;
-        max-height: 4.125rem;
-        min-width: 100vw;
-    }
-    .side_nav_icons,.side_nav_logo{
-        flex: 1;
-        display: flex;
-        align-items: center;
-    }
-    .side_nav_icons i{
-        flex: 1;
-    }
-    .side_nav_logo i{
-        flex: 1;
-    }
-    .side_nav_logo{
-        margin: 10px 1px 10px 1px;
-        padding: 6px 8px 6px 8px;
-        min-height: 34px;
-        min-width: 63.3px;
-    }
-    .ham-icon{
-        display: flex;
-        margin-right: auto;
-        padding-left: 0.4rem;
-    }
-    main{
-        overflow-y: scroll;
-    }
-    .top_bar{
-        margin-left: 0;
-        width: 100vw;
-        position: fixed;
-        z-index: 1;
-    }
-    #page_container{
-        padding: 1rem;
-        margin-left: 0;
-        margin-bottom: 4.125rem;
-        padding-top: 4rem;
-    }
-    
+  .side_nav {
+    display: flex;
+    bottom: 0;
+    top: auto;
+    left: auto;
+    max-height: 4.125rem;
+    min-width: 100vw;
+  }
+  .side_nav_icons,
+  .side_nav_logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  .title{
+    margin: auto;
+  }
+  .side_nav_icons i {
+    flex: 1;
+  }
+  .side_nav_logo i {
+    flex: 1;
+  }
+  .side_nav_logo {
+    margin: 10px 1px 10px 1px;
+    padding: 6px 8px 6px 8px;
+    min-height: 34px;
+    min-width: 63.3px;
+  }
+  .ham-icon {
+    display: flex;
+    margin-right: auto;
+    padding-left: 0.4rem;
+  }
+  .grid-item {
+    margin-bottom: 0;
+    margin-right: 0.4rem;
+  }
+  main {
+    overflow-y: scroll;
+  }
+  .top_bar {
+    margin-left: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+  }
+  #page_container {
+    padding: 0.1rem;
+    margin-left: 0;
+    margin-bottom: 4.125rem;
+    padding-top: 4rem;
+  }
 
-.left-section{
+  .left-section {
     display: none;
-}
+  }
 }
 
-.left-section.responsive{
-    display: block;
-    float: none;
-    transition: 1000ms;
+.left-section.responsive {
+  display: block;
+  float: none;
+  transition: 1000ms;
 }

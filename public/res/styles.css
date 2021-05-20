@@ -11,6 +11,7 @@
 }
 /* font sizes to be used throughout the app */
 .title {
+    padding: 1rem;
   font-size: 32pt;
   font-weight: 700;
 }
@@ -77,8 +78,8 @@ main {
   align-items: center;
   justify-content: flex-end;
 }
-.top_bar_icons{
-    padding: 6px 0px 6px 0px;
+.top_bar_icons {
+  padding: 6px 0px 6px 0px;
 }
 .top_bar_icons i {
   margin-top: 25%;
@@ -103,15 +104,16 @@ main {
   color: #000;
 }
 .profile-image {
-  border-radius: 1rem;
+    border: .2rem solid var(--color-accent-faded);
+  border-radius: 2rem;
   height: 2rem;
   width: 2rem;
 }
-.left-section{
-    flex: 1;
-    margin-left: 0.3rem;
-    min-width: 12rem;
-    max-width: 12rem;
+.left-section {
+  flex: 1;
+  margin-left: 0.3rem;
+  min-width: 12rem;
+  max-width: 12rem;
 }
 .side_bar {
   height: fit-content;
@@ -120,7 +122,7 @@ main {
   padding: 0.3rem;
 }
 .side-bar-items {
-    margin-left: 0.1rem;
+  margin-left: 0.1rem;
   display: flex;
   align-items: center;
 }
@@ -146,8 +148,8 @@ main {
   padding: 8px;
   padding-top: 20px;
 }
-.ham-icon{
-    display: none;
+.ham-icon {
+  display: none;
 }
 .side_nav_logo {
   font-size: 20px;
@@ -167,27 +169,86 @@ main {
 }
 
 .auto-grid {
-    --auto-grid-min-size: 16rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    grid-gap: 1rem;
-  }
-main{
-    overflow-y: auto;
+  --auto-grid-min-size: 20rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
 }
-.grid-item{
-    background-color: var(--color-accent);
+main {
+  overflow-y: auto;
+}
+.grid-item {
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 1rem;
+  transition: 400ms ease-in-out;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.section-title {
+  flex: 1;
+  max-height: 2rem;
+}
+.flex-content {
+  flex: 5;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.lesson{
+    margin: .1rem;
+    background-color: var(--color-accent-faded);
+    display: flex;
+    border-radius: .8rem;
+    padding: 1rem;
+    color: rgb(36, 36, 36);
+}
+.time,.info,.class-icon{
+    flex: 1;
     display: flex;
     align-items: center;
-    border-radius: 2rem;
-    padding: 1rem;
+  flex-direction: column;
+}
+.time,.info,.class-icon div{
+    flex: 1;
+    margin-top: auto;
+    margin-left: auto;
 }
 
-.grid-item div{
-    margin: auto;
-    color: var(--color-primary);
-}
 
+.leaderboard-results {
+    text-align:left;
+    border-radius: .8rem;
+    border-collapse: collapse;
+  }
+  .leaderboard-results thead th {
+    padding: 25px;
+    color:#747474;
+    font-size:14px;
+    font-weight:bold;
+  }
+  .leaderboard-results tbody td {
+    padding:15px 25px;
+    background:#1a1a1a;
+    font-size:16px;
+    border-bottom:5px solid #232323;
+  }
+  
+  .leaderboard-results tbody tr {
+    color:var(--side-menu-background-color);
+  }
+  .leaderboard-results tbody span {
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:50%;
+  }
 /* all the animations/acivity are below */
 .side_nav_logo:hover {
   font-size: 24px;
@@ -197,6 +258,10 @@ main{
   box-shadow: 3px 3px 6px var(--color-accent-faded);
   -webkit-box-shadow: 3px 3px 6px var(--color-accent);
   color: #fff;
+}
+.grid-item:hover{
+    transition: 100ms ease-in-out;
+    box-shadow: 4px 4px 7px #b8b8b8;
 }
 .side_nav_icons.active:hover {
   box-shadow: 0px 0px 0px var(--color-accent);
@@ -219,6 +284,7 @@ main{
   animation: dropdown 800ms infinite;
   transition: 800ms;
 }
+
 
 /* dropdown animation */
 @keyframes dropdown {

@@ -1,7 +1,15 @@
 # LMS-Dashboard_C3
 A Learning Management system dashboard for students to keep track of their studies.
 <!-- Overview
-You have to create a Dashboard that contains Upcoming lessons tab, Tasks tab , Leader board , My courses , Some Analytic Graphs ,  Timetable and Homework Progress.  Proper Layout PDF and Some Sample Designs will be attached. 
+You have to create a Dashboard that contains 
+Upcoming lessons tab,
+ Tasks tab ,
+ Leader board , 
+ My courses ,
+ Some Analytic Graphs ,
+ Timetable and
+ Homework Progress.
+ Proper Layout PDF and Some Sample Designs will be attached. 
 No need of any API just hard-code dummy data.
 Don’t use react or any other frontend framework.
 Documentation
