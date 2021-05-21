@@ -33,6 +33,9 @@
     margin-right: auto;
     padding-left: 0.4rem;
   }
+  .auto_grid{
+    padding-bottom: 4.125rem;
+  }
   .grid-item {
     margin-bottom: 0;
     margin-right: 0.4rem;
@@ -44,7 +47,7 @@
     margin-left: 0;
     width: 100vw;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
   }
   #page_container {
     padding: 0.1rem;
