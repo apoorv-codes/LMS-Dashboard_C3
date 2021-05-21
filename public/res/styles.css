@@ -190,6 +190,7 @@ main {
     minmax(var(--auto-grid-min-size), 1fr)
   );
   grid-gap: 1rem;
+  margin-bottom: 94px;
 }
 main {
   overflow-y: auto;
@@ -314,6 +315,21 @@ main {
 .side-bar-items:hover .sidebar-item-lable{
     color: var(--color-accent-faded);
 }
+
+.task{
+  display: flex;
+  align-items: center;
+}
+.task-content{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.task-item{
+  padding: .4rem;
+}
+
+
 /* dropdown animation */
 @keyframes dropdown {
   0% {
