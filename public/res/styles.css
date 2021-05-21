@@ -140,6 +140,7 @@ main {
   border-radius: .4rem;
   align-items: center;
 }
+
 .sidebar-item-icon {
   flex: 1;
   margin-left: 1rem;
@@ -314,6 +315,9 @@ main {
 }
 .side-bar-items:hover .sidebar-item-lable{
     color: var(--color-accent-faded);
+}
+.side-bar-items:hover .sidebar-item-icon i{
+  color: var(--color-accent-faded);
 }
 
 .task{
